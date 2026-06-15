@@ -1,12 +1,16 @@
+# from django.db.models import Q
 from rest_framework.decorators import action
 from django.http import JsonResponse
 from django.shortcuts import get_object_or_404
-from rest_framework import status
+from rest_framework import status, filters
 from rest_framework.response import Response
 from rest_framework.views import APIView
-from rest_framework.viewsets import ViewSet, ModelViewSet
+from rest_framework.viewsets import ModelViewSet
+# from django.contrib.postgres.search import TrigramSimilarity
+from django_filters.rest_framework import DjangoFilterBackend
 
 from tasks.models import Project, Task
+from tasks.paginations import CustomPagination
 from tasks.serializers import ProjectList, ProjectCreateAndUpdateSerializer, TaskListSerializer, \
     TaskCreateAndUpdateSerializer
 
@@ -107,8 +111,31 @@ class TaskModelViewSet(ModelViewSet):
     queryset = Task.objects.all()
     serializer_class = TaskListSerializer
 
+    # pagination_class = None
+
+    filter_backends = [
+        filters.SearchFilter,
+        DjangoFilterBackend,
+        filters.OrderingFilter
+    ]
+
+    search_fields = [
+        'name',
+        'description',
+    ]
+
+    filterset_fields = ["status", "to_user", "project"]
+    ordering = ['created_time', 'id']
+
     # def get_queryset(self):
-    #     return Task.objects.filter()
+    #     search = self.request.query_params.get('search')
+    #     if search:
+    #         # return self.queryset.filter(Q(name__icontains=search) | Q(description__icontains=search))
+    #         return self.queryset.annotate(similarity_name=TrigramSimilarity('name', search),
+    #                                       similarity_desc=TrigramSimilarity('description', search)).filter(
+    #             Q(similarity_name__gt=0.2) | Q(similarity_desc__gt=0.2)
+    #         ).order_by('-similarity_name', '-similarity_desc')
+    #     return self.queryset
 
     def get_serializer_class(self):
         if self.action in ("create", "update"):

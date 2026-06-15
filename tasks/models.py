@@ -25,6 +25,7 @@ class Task(models.Model):
     status = models.CharField(choices=Status.choices, default=Status.TO_DO, max_length=50)
     to_user = models.ForeignKey('accounts.User', on_delete=models.SET_NULL, null=True)
     project = models.ForeignKey('Project', on_delete=models.PROTECT)
+    created_time = models.DateTimeField(auto_now=True)
 
     class Meta:
         db_table = 'task'
