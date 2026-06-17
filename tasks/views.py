@@ -3,6 +3,7 @@ from rest_framework.decorators import action
 from django.http import JsonResponse
 from django.shortcuts import get_object_or_404
 from rest_framework import status, filters
+from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework.viewsets import ModelViewSet
@@ -126,6 +127,7 @@ class TaskModelViewSet(ModelViewSet):
 
     filterset_fields = ["status", "to_user", "project"]
     ordering = ['created_time', 'id']
+    permission_classes = [IsAuthenticated]
 
     # def get_queryset(self):
     #     search = self.request.query_params.get('search')
@@ -136,6 +138,7 @@ class TaskModelViewSet(ModelViewSet):
     #             Q(similarity_name__gt=0.2) | Q(similarity_desc__gt=0.2)
     #         ).order_by('-similarity_name', '-similarity_desc')
     #     return self.queryset
+    #
 
     def get_serializer_class(self):
         if self.action in ("create", "update"):

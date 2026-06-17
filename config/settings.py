@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     "rest_framework",
     "rest_framework.authtoken",
     'django_filters',
+    'rest_framework_simplejwt',
+    'rest_framework_simplejwt.token_blacklist',
 ]
 
 MIDDLEWARE = [
@@ -96,8 +98,10 @@ REST_FRAMEWORK = {
         'tasks.paginations.CustomPagination',
 
     'DEFAULT_AUTHENTICATION_CLASSES': [
-        'accounts.authentication.CsrfExemptSessionAuthentication',
-        'rest_framework.authentication.TokenAuthentication',
+        # 'accounts.authentication.CsrfExemptSessionAuthentication',
+        # 'rest_framework.authentication.TokenAuthentication',
+        # 'rest_framework_simplejwt.authentication.JWTAuthentication',
+        "accounts.authentication.JWTAuthentication"
     ],
 }
 
@@ -134,3 +138,14 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
 STATIC_URL = 'static/'
+
+from datetime import timedelta
+
+SIMPLE_JWT = {
+    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=60),
+    'REFRESH_TOKEN_LIFETIME': timedelta(days=7),
+    'ROTATE_REFRESH_TOKENS': True,  # yangi refresh
+    'BLACKLIST_AFTER_ROTATION': True,  # eskilar blacklist
+    'ALGORITHM': 'HS256',
+    'AUTH_HEADER_TYPES': ('Bearer',),
+}
