@@ -6,8 +6,9 @@ from rest_framework.decorators import action
 from rest_framework.mixins import CreateModelMixin
 from rest_framework.response import Response
 
+from accounts.jwt_utils import create_tokens
 from accounts.models import User
-from accounts.serializers import LoginSerializer, UserSerializer, UserCreateSerializer
+from accounts.serializers import LoginSerializer, UserSerializer, UserCreateSerializer, RefreshSerializer
 
 
 class AuthViewSet(viewsets.GenericViewSet, CreateModelMixin):
@@ -65,3 +66,19 @@ class AuthWithTokenViewSet(viewsets.GenericViewSet):
     def get_session(self, request):
         user = request.user
         return Response(UserSerializer(user).data, status=status.HTTP_200_OK)
+
+
+class AuthCustomJWTViewSet(viewsets.GenericViewSet):
+    @action(methods=['post'], detail=False, url_path='login-jwt-custom', serializer_class=LoginSerializer)
+    def login_jwt(self, request):
+        serializer = self.serializer_class(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        user = serializer.validated_data.get("user")
+        token = create_tokens(user.id)
+        return Response(token)
+
+    @action(methods=['post'], detail=False, url_path='refresh', serializer_class=RefreshSerializer)
+    def refresh(self, request):
+        serializer = self.serializer_class(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        return Response(serializer.validated_data)

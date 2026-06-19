@@ -1,6 +1,7 @@
 from django.contrib.auth import authenticate
 from rest_framework import serializers
 
+from accounts.jwt_utils import refresh_access_token
 from accounts.models import User
 
 
@@ -48,3 +49,12 @@ class LoginSerializer(serializers.Serializer):
             raise serializers.ValidationError("username or password is incorrect")
 
         return {"user": user}
+
+
+class RefreshSerializer(serializers.Serializer):
+    refresh = serializers.CharField()
+
+    def validate(self, attrs):
+        refresh = attrs.get('refresh')
+
+        return refresh_access_token(refresh)
