@@ -64,5 +64,5 @@ class TaskListSerializer(serializers.ModelSerializer):
 class TaskCreateAndUpdateSerializer(serializers.ModelSerializer):
     class Meta:
         model = Task
-        fields = ('id', 'name', 'description', "to_user", "project","status")
+        fields = ('id', 'name', 'description', "to_user", "project", "status")
         extra_kwargs = {'id': {'read_only': True}}

@@ -1,4 +1,6 @@
 # from django.db.models import Q
+from drf_yasg import openapi
+from drf_yasg.utils import swagger_auto_schema
 from rest_framework.decorators import action
 from django.http import JsonResponse
 from django.shortcuts import get_object_or_404
@@ -22,6 +24,22 @@ def salom(request):
 
 
 class ProjectAPIView(APIView):
+    @swagger_auto_schema(
+        manual_parameters=[
+            openapi.Parameter(
+                'search',
+                openapi.IN_QUERY,
+                description="Qidirish so'zi",
+                type=openapi.TYPE_STRING,
+            ),
+            openapi.Parameter(
+                'page',
+                openapi.IN_QUERY,
+                description="Sahifa raqami",
+                type=openapi.TYPE_INTEGER,
+            ),
+        ],
+    )
     def get(self, request):
         project = Project.objects.all()  # querset[<p1>,<p2]
         serializer = ProjectList(project, many=True)  # [{id:1,"name":sdads..}, ...]
@@ -38,6 +56,19 @@ class ProjectAPIView(APIView):
         #
         # return JsonResponse(project_list, safe=False)
 
+    @swagger_auto_schema(
+        operation_summary="project yaratish",
+        operation_description="Bu endpoint porject yasaydi",
+        request_body=ProjectCreateAndUpdateSerializer,
+        responses={
+            201: openapi.Response(
+                'Muvaffaqiyatli',
+                ProjectCreateAndUpdateSerializer
+            ),
+            403: "Ruxsat yo'q",
+        },
+        tags=['task']
+    )
     def post(self, request):
         # name = request.data.get('name')
         # description = request.data.get('description')

@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'django_filters',
     'rest_framework_simplejwt',
     'rest_framework_simplejwt.token_blacklist',
+    "drf_yasg",
 ]
 
 MIDDLEWARE = [
@@ -100,7 +101,7 @@ REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
         # 'accounts.authentication.CsrfExemptSessionAuthentication',
         # 'rest_framework.authentication.TokenAuthentication',
-        # 'rest_framework_simplejwt.authentication.JWTAuthentication',
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
         "accounts.authentication.JWTAuthentication"
     ],
 }
@@ -148,4 +149,17 @@ SIMPLE_JWT = {
     'BLACKLIST_AFTER_ROTATION': True,  # eskilar blacklist
     'ALGORITHM': 'HS256',
     'AUTH_HEADER_TYPES': ('Bearer',),
+}
+
+SWAGGER_SETTINGS = {
+    "SECURITY_DEFINITIONS": {
+        "Bearer": {
+            "type": "apiKey",
+            "name": "Authorization",
+            "in": "header",
+            "description": "Bearer <JWT_TOKEN>",
+        },
+    },
+    "DOC_EXPANSION": False,  # yopiq holda ochilsin
+    "USE_SESSION_AUTH": False,
 }
