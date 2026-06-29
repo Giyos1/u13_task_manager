@@ -24,6 +24,10 @@ from .tasks import add
 class BackgroundTaskViewSet(GenericViewSet):
     serializer_class = BackgroundTaskSerializer
 
+    @action(detail=False, methods=['post'])
+    def send_gmail(self,request):
+        pass
+
     @action(detail=False, methods=['get'])
     def start_task(self, request):
         a = add.delay(1, 2)  # background ga yuborish!
