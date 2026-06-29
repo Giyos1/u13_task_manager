@@ -129,7 +129,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Tashkent'
 
 USE_I18N = True
 
@@ -163,3 +163,18 @@ SWAGGER_SETTINGS = {
     "DOC_EXPANSION": False,  # yopiq holda ochilsin
     "USE_SESSION_AUTH": False,
 }
+
+# Redis broker sifatida
+CELERY_BROKER_URL = 'redis://localhost:6379/0'
+
+# Natijalar Redis da saqlansin
+CELERY_RESULT_BACKEND = 'redis://localhost:6379/0'
+
+# Task boshlanganini kuzatamiz
+CELERY_TASK_TRACK_STARTED = True
+
+# Maksimal vaqt: 30 daqiqa
+CELERY_TASK_TIME_LIMIT = 1800
+
+# Toshkent vaqt zonasi
+CELERY_TIMEZONE = 'Asia/Tashkent'

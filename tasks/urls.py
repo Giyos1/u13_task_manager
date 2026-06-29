@@ -2,9 +2,12 @@ from django.urls import path
 from . import views
 from rest_framework import routers
 
+from .views import BackgroundTaskViewSet
+
 router = routers.DefaultRouter()
 
 router.register('tasks', views.TaskModelViewSet, basename='tasks')
+router.register('background', BackgroundTaskViewSet, basename='background')
 
 urlpatterns = [
                   # path('', views.salom, name='salom'),

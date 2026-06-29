@@ -8,14 +8,36 @@ from rest_framework import status, filters
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
-from rest_framework.viewsets import ModelViewSet
+from rest_framework.viewsets import ModelViewSet, GenericViewSet
 # from django.contrib.postgres.search import TrigramSimilarity
 from django_filters.rest_framework import DjangoFilterBackend
 
 from tasks.models import Project, Task
 from tasks.paginations import CustomPagination
 from tasks.serializers import ProjectList, ProjectCreateAndUpdateSerializer, TaskListSerializer, \
-    TaskCreateAndUpdateSerializer
+    TaskCreateAndUpdateSerializer, BackgroundTaskSerializer
+from celery.result import AsyncResult
+from config.celery import app
+from .tasks import add
+
+
+class BackgroundTaskViewSet(GenericViewSet):
+    serializer_class = BackgroundTaskSerializer
+
+    @action(detail=False, methods=['get'])
+    def start_task(self, request):
+        a = add.delay(1, 2)  # background ga yuborish!
+        return Response({"task_id": a.id})
+
+    # Natijani tekshirish
+    @action(detail=False, methods=['post'], )
+    def check_task(self, request):
+        task_id = request.data['task_id']
+        result = AsyncResult(task_id, app=app)
+
+        if result.ready():  # Tayormi?
+            return Response({"result": result.result})
+        return Response({"status": "processing..."})
 
 
 # Create your views here.

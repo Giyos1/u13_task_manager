@@ -66,3 +66,6 @@ class TaskCreateAndUpdateSerializer(serializers.ModelSerializer):
         model = Task
         fields = ('id', 'name', 'description', "to_user", "project", "status")
         extra_kwargs = {'id': {'read_only': True}}
+
+class BackgroundTaskSerializer(serializers.Serializer):
+    task_id = serializers.UUIDField()
