@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt',
     'rest_framework_simplejwt.token_blacklist',
     "drf_yasg",
+    'django_celery_beat',
 ]
 
 MIDDLEWARE = [
@@ -178,3 +179,6 @@ CELERY_TASK_TIME_LIMIT = 1800
 
 # Toshkent vaqt zonasi
 CELERY_TIMEZONE = 'Asia/Tashkent'
+CELERY_BEAT_SCHEDULER = (
+    'django_celery_beat.schedulers.DatabaseScheduler'
+)
