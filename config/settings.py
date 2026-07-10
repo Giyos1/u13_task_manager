@@ -29,6 +29,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'daphne',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -39,6 +40,7 @@ INSTALLED_APPS = [
     # local
     'tasks',
     "accounts",
+    "chat",
 
     # 3 rd
     "rest_framework",
@@ -48,9 +50,11 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt.token_blacklist',
     "drf_yasg",
     'django_celery_beat',
+    'debug_toolbar',
 ]
 
 MIDDLEWARE = [
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -77,7 +81,8 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'config.wsgi.application'
+# WSGI_APPLICATION = 'config.wsgi.application'
+ASGI_APPLICATION = "config.asgi.application"
 
 # Database
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
@@ -100,7 +105,7 @@ REST_FRAMEWORK = {
         'tasks.paginations.CustomPagination',
 
     'DEFAULT_AUTHENTICATION_CLASSES': [
-        # 'accounts.authentication.CsrfExemptSessionAuthentication',
+        'accounts.authentication.CsrfExemptSessionAuthentication',
         # 'rest_framework.authentication.TokenAuthentication',
         'rest_framework_simplejwt.authentication.JWTAuthentication',
         "accounts.authentication.JWTAuthentication"
@@ -182,3 +187,14 @@ CELERY_TIMEZONE = 'Asia/Tashkent'
 CELERY_BEAT_SCHEDULER = (
     'django_celery_beat.schedulers.DatabaseScheduler'
 )
+
+INTERNAL_IPS = ["127.0.0.1"]
+
+CHANNEL_LAYERS = {
+    "default": {
+        "BACKEND": "channels_redis.core.RedisChannelLayer",
+        "CONFIG": {
+            "hosts": [("127.0.0.1", 6379)],
+        },
+    },
+}

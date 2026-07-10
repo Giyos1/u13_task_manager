@@ -4,6 +4,8 @@ from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
 from rest_framework import permissions
 
+from config import settings
+
 schema_view = get_schema_view(
     openapi.Info(
         title="My API",
@@ -25,3 +27,10 @@ urlpatterns = [
     path('task/', include('tasks.urls')),
     path('accounts/', include('accounts.urls')),
 ]
+
+if settings.DEBUG:
+    import debug_toolbar
+    urlpatterns += [
+        path('__debug__/',
+             include(debug_toolbar.urls)),
+    ]

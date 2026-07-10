@@ -67,7 +67,7 @@ class ProjectAPIView(APIView):
         ],
     )
     def get(self, request):
-        project = Project.objects.all()  # querset[<p1>,<p2]
+        project = Project.objects.select_related('owner')  # querset[<p1>,<p2]
         serializer = ProjectList(project, many=True)  # [{id:1,"name":sdads..}, ...]
         return Response(serializer.data)
         # project_list = []
