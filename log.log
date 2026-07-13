@@ -1078,3 +1078,258 @@ redis.exceptions.TimeoutError: Timeout reading from 127.0.0.1:6379
 2026-07-10 20:15:43,960 [INFO] django.channels.server: WebSocket CONNECT /ws/chat/math/ [127.0.0.1:62001]
 2026-07-10 20:15:46,140 [INFO] django.channels.server: WebSocket HANDSHAKING /ws/chat/math/ [127.0.0.1:62002]
 2026-07-10 20:15:46,142 [INFO] django.channels.server: WebSocket CONNECT /ws/chat/math/ [127.0.0.1:62002]
+2026-07-13 19:39:26,899 [INFO] daphne.server: HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2026-07-13 19:39:26,900 [INFO] daphne.server: Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2026-07-13 19:39:26,900 [INFO] daphne.server: Listening on TCP address 127.0.0.1:8000
+2026-07-13 19:39:35,076 [INFO] django.channels.server: [32mHTTP GET /admin/ 302 [0.13, 127.0.0.1:49412][0m
+2026-07-13 19:39:35,122 [INFO] django.channels.server: [mHTTP GET /admin/login/?next=/admin/ 200 [0.04, 127.0.0.1:49412][0m
+2026-07-13 19:39:35,214 [INFO] django.channels.server: [36mHTTP GET /static/admin/css/base.css 304 [0.01, 127.0.0.1:49412][0m
+2026-07-13 19:39:35,217 [INFO] django.channels.server: [36mHTTP GET /static/admin/css/nav_sidebar.css 304 [0.01, 127.0.0.1:49416][0m
+2026-07-13 19:39:35,221 [INFO] django.channels.server: [36mHTTP GET /static/admin/css/dark_mode.css 304 [0.02, 127.0.0.1:49415][0m
+2026-07-13 19:39:35,222 [INFO] django.channels.server: [36mHTTP GET /static/admin/css/responsive.css 304 [0.02, 127.0.0.1:49413][0m
+2026-07-13 19:39:35,225 [INFO] django.channels.server: [36mHTTP GET /static/admin/css/login.css 304 [0.02, 127.0.0.1:49417][0m
+2026-07-13 19:39:35,242 [INFO] django.channels.server: [36mHTTP GET /static/debug_toolbar/css/toolbar.css 304 [0.04, 127.0.0.1:49418][0m
+2026-07-13 19:39:35,254 [INFO] django.channels.server: [36mHTTP GET /static/debug_toolbar/js/toolbar.js 304 [0.03, 127.0.0.1:49416][0m
+2026-07-13 19:39:35,255 [INFO] django.channels.server: [36mHTTP GET /static/admin/js/theme.js 304 [0.03, 127.0.0.1:49412][0m
+2026-07-13 19:39:35,281 [INFO] django.channels.server: [36mHTTP GET /static/admin/js/nav_sidebar.js 304 [0.02, 127.0.0.1:49412][0m
+2026-07-13 19:39:35,315 [INFO] django.channels.server: [36mHTTP GET /static/debug_toolbar/css/print.css 304 [0.05, 127.0.0.1:49416][0m
+2026-07-13 19:39:35,325 [INFO] django.channels.server: [36mHTTP GET /static/debug_toolbar/js/utils.js 304 [0.04, 127.0.0.1:49412][0m
+2026-07-13 19:39:35,542 [WARNING] django.request: Not Found: /favicon.ico
+2026-07-13 19:39:35,543 [WARNING] django.channels.server: [33mHTTP GET /favicon.ico 404 [0.12, 127.0.0.1:49412][0m
+2026-07-13 19:39:42,917 [INFO] django.channels.server: [32mHTTP POST /admin/login/?next=/admin/ 302 [0.22, 127.0.0.1:49412][0m
+2026-07-13 19:39:43,016 [INFO] django.channels.server: [mHTTP GET /admin/ 200 [0.10, 127.0.0.1:49412][0m
+2026-07-13 19:39:43,055 [INFO] django.channels.server: [36mHTTP GET /static/admin/css/base.css 304 [0.00, 127.0.0.1:49412][0m
+2026-07-13 19:39:43,055 [INFO] django.channels.server: [36mHTTP GET /static/admin/js/theme.js 304 [0.00, 127.0.0.1:49418][0m
+2026-07-13 19:39:43,055 [INFO] django.channels.server: [36mHTTP GET /static/admin/css/dark_mode.css 304 [0.00, 127.0.0.1:49416][0m
+2026-07-13 19:39:43,056 [INFO] django.channels.server: [36mHTTP GET /static/admin/css/responsive.css 304 [0.00, 127.0.0.1:49417][0m
+2026-07-13 19:39:43,056 [INFO] django.channels.server: [36mHTTP GET /static/debug_toolbar/css/toolbar.css 304 [0.00, 127.0.0.1:49413][0m
+2026-07-13 19:39:43,056 [INFO] django.channels.server: [36mHTTP GET /static/debug_toolbar/js/toolbar.js 304 [0.00, 127.0.0.1:49415][0m
+2026-07-13 19:39:43,062 [INFO] django.channels.server: [36mHTTP GET /static/admin/css/dashboard.css 304 [0.00, 127.0.0.1:49418][0m
+2026-07-13 19:39:43,062 [INFO] django.channels.server: [36mHTTP GET /static/admin/css/nav_sidebar.css 304 [0.01, 127.0.0.1:49412][0m
+2026-07-13 19:39:43,065 [INFO] django.channels.server: [36mHTTP GET /static/admin/js/nav_sidebar.js 304 [0.00, 127.0.0.1:49415][0m
+2026-07-13 19:39:43,065 [INFO] django.channels.server: [36mHTTP GET /static/debug_toolbar/css/print.css 304 [0.00, 127.0.0.1:49413][0m
+2026-07-13 19:39:43,065 [INFO] django.channels.server: [36mHTTP GET /static/debug_toolbar/js/utils.js 304 [0.00, 127.0.0.1:49417][0m
+2026-07-13 19:39:43,071 [INFO] django.channels.server: [36mHTTP GET /static/admin/img/icon-addlink.svg 304 [0.00, 127.0.0.1:49417][0m
+2026-07-13 19:39:43,071 [INFO] django.channels.server: [36mHTTP GET /static/admin/img/icon-changelink.svg 304 [0.00, 127.0.0.1:49413][0m
+2026-07-13 19:40:24,550 [INFO] django.channels.server: [mHTTP POST /accounts/login_jwt/ 200 [0.37, 127.0.0.1:49469][0m
+2026-07-13 19:40:42,151 [INFO] django.channels.server: WebSocket HANDSHAKING /ws/notifications/ [127.0.0.1:49486]
+2026-07-13 19:40:42,226 [INFO] django.channels.server: WebSocket REJECT /ws/notifications/ [127.0.0.1:49486]
+2026-07-13 19:40:42,226 [INFO] django.channels.server: WebSocket DISCONNECT /ws/notifications/ [127.0.0.1:49486]
+2026-07-13 19:42:31,670 [INFO] django.channels.server: WebSocket HANDSHAKING /ws/notifications/ [127.0.0.1:49530]
+2026-07-13 19:42:31,676 [INFO] django.channels.server: WebSocket REJECT /ws/notifications/ [127.0.0.1:49530]
+2026-07-13 19:42:31,677 [INFO] django.channels.server: WebSocket DISCONNECT /ws/notifications/ [127.0.0.1:49530]
+2026-07-13 19:43:25,920 [INFO] django.channels.server: WebSocket HANDSHAKING /ws/notifications [127.0.0.1:49552]
+2026-07-13 19:43:26,344 [ERROR] daphne.server: Exception inside application: No route found for path 'ws/notifications'.
+Traceback (most recent call last):
+  File "/Users/giyos/PycharmProjects/u13_task_manager/venv/lib/python3.14/site-packages/django/contrib/staticfiles/handlers.py", line 101, in __call__
+    return await self.application(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/giyos/PycharmProjects/u13_task_manager/venv/lib/python3.14/site-packages/channels/routing.py", line 48, in __call__
+    return await application(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/giyos/PycharmProjects/u13_task_manager/venv/lib/python3.14/site-packages/channels/sessions.py", line 44, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/giyos/PycharmProjects/u13_task_manager/venv/lib/python3.14/site-packages/channels/sessions.py", line 261, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/giyos/PycharmProjects/u13_task_manager/venv/lib/python3.14/site-packages/channels/auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/giyos/PycharmProjects/u13_task_manager/venv/lib/python3.14/site-packages/channels/middleware.py", line 24, in __call__
+    return await self.inner(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/giyos/PycharmProjects/u13_task_manager/venv/lib/python3.14/site-packages/channels/routing.py", line 136, in __call__
+    raise ValueError("No route found for path %r." % path)
+ValueError: No route found for path 'ws/notifications'.
+2026-07-13 19:43:26,363 [INFO] django.channels.server: WebSocket DISCONNECT /ws/notifications [127.0.0.1:49552]
+2026-07-13 19:43:33,593 [INFO] django.channels.server: WebSocket HANDSHAKING /ws/notifications/ [127.0.0.1:49553]
+2026-07-13 19:43:33,604 [INFO] django.channels.server: WebSocket REJECT /ws/notifications/ [127.0.0.1:49553]
+2026-07-13 19:43:33,605 [INFO] django.channels.server: WebSocket DISCONNECT /ws/notifications/ [127.0.0.1:49553]
+2026-07-13 19:44:52,173 [INFO] django.utils.autoreload: /Users/giyos/PycharmProjects/u13_task_manager/config/asgi.py changed, reloading.
+2026-07-13 19:44:53,567 [INFO] daphne.server: HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2026-07-13 19:44:53,568 [INFO] daphne.server: Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2026-07-13 19:44:53,568 [INFO] daphne.server: Listening on TCP address 127.0.0.1:8000
+2026-07-13 19:45:21,527 [INFO] django.utils.autoreload: /Users/giyos/PycharmProjects/u13_task_manager/config/asgi.py changed, reloading.
+2026-07-13 19:45:22,761 [INFO] daphne.server: HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2026-07-13 19:45:22,761 [INFO] daphne.server: Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2026-07-13 19:45:22,761 [INFO] daphne.server: Listening on TCP address 127.0.0.1:8000
+2026-07-13 19:49:16,931 [INFO] django.utils.autoreload: /Users/giyos/PycharmProjects/u13_task_manager/config/asgi.py changed, reloading.
+2026-07-13 19:49:18,399 [INFO] daphne.server: HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2026-07-13 19:49:18,399 [INFO] daphne.server: Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2026-07-13 19:49:18,399 [INFO] daphne.server: Listening on TCP address 127.0.0.1:8000
+2026-07-13 19:49:25,052 [INFO] django.channels.server: [36mHTTP GET /static/admin/css/base.css 304 [0.02, 127.0.0.1:49614][0m
+2026-07-13 19:49:25,052 [INFO] django.channels.server: [36mHTTP GET /static/admin/css/dark_mode.css 304 [0.02, 127.0.0.1:49615][0m
+2026-07-13 19:49:25,053 [INFO] django.channels.server: [36mHTTP GET /static/admin/css/nav_sidebar.css 304 [0.02, 127.0.0.1:49616][0m
+2026-07-13 19:49:25,053 [INFO] django.channels.server: [36mHTTP GET /static/admin/css/dashboard.css 304 [0.02, 127.0.0.1:49617][0m
+2026-07-13 19:49:25,053 [INFO] django.channels.server: [36mHTTP GET /static/admin/css/responsive.css 304 [0.02, 127.0.0.1:49618][0m
+2026-07-13 19:49:25,055 [INFO] django.channels.server: [36mHTTP GET /static/debug_toolbar/css/print.css 304 [0.02, 127.0.0.1:49619][0m
+2026-07-13 19:49:25,062 [INFO] django.channels.server: [36mHTTP GET /static/debug_toolbar/css/toolbar.css 304 [0.01, 127.0.0.1:49617][0m
+2026-07-13 19:49:25,149 [WARNING] django.request: Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2026-07-13 19:49:25,150 [WARNING] django.channels.server: [33mHTTP GET /.well-known/appspecific/com.chrome.devtools.json 404 [0.09, 127.0.0.1:49614][0m
+2026-07-13 19:51:04,609 [INFO] django.channels.server: WebSocket HANDSHAKING /ws/notifications/ [127.0.0.1:50037]
+2026-07-13 19:51:04,672 [INFO] django.channels.server: WebSocket REJECT /ws/notifications/ [127.0.0.1:50037]
+2026-07-13 19:51:04,673 [INFO] django.channels.server: WebSocket DISCONNECT /ws/notifications/ [127.0.0.1:50037]
+2026-07-13 19:52:21,950 [INFO] django.utils.autoreload: /Users/giyos/PycharmProjects/u13_task_manager/config/asgi.py changed, reloading.
+2026-07-13 19:52:23,223 [INFO] daphne.server: HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2026-07-13 19:52:23,223 [INFO] daphne.server: Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2026-07-13 19:52:23,223 [INFO] daphne.server: Listening on TCP address 127.0.0.1:8000
+2026-07-13 19:53:30,237 [WARNING] django.request: Not Found: /accounts/auth-jwt/login_jwt/
+2026-07-13 19:53:30,238 [WARNING] django.channels.server: [33mHTTP POST /accounts/auth-jwt/login_jwt/ 404 [0.05, 127.0.0.1:50664][0m
+2026-07-13 19:54:13,115 [INFO] django.channels.server: [mHTTP POST /accounts/auth-jwt/login-jwt-custom/ 200 [0.31, 127.0.0.1:50664][0m
+2026-07-13 19:54:22,318 [INFO] django.channels.server: WebSocket HANDSHAKING /ws/notifications/ [127.0.0.1:50898]
+2026-07-13 19:54:22,450 [ERROR] daphne.server: Exception inside application: 'str' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/Users/giyos/PycharmProjects/u13_task_manager/venv/lib/python3.14/site-packages/django/contrib/staticfiles/handlers.py", line 101, in __call__
+    return await self.application(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/giyos/PycharmProjects/u13_task_manager/venv/lib/python3.14/site-packages/channels/routing.py", line 48, in __call__
+    return await application(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/giyos/PycharmProjects/u13_task_manager/config/ws_middleware.py", line 17, in __call__
+    scope["user"] = payload.get('user_id')
+                    ^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'get'
+2026-07-13 19:54:22,458 [INFO] django.channels.server: WebSocket DISCONNECT /ws/notifications/ [127.0.0.1:50898]
+2026-07-13 19:54:38,354 [INFO] django.channels.server: WebSocket HANDSHAKING /ws/notifications/ [127.0.0.1:50966]
+2026-07-13 19:54:38,478 [ERROR] daphne.server: Exception inside application: 'str' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/Users/giyos/PycharmProjects/u13_task_manager/venv/lib/python3.14/site-packages/django/contrib/staticfiles/handlers.py", line 101, in __call__
+    return await self.application(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/giyos/PycharmProjects/u13_task_manager/venv/lib/python3.14/site-packages/channels/routing.py", line 48, in __call__
+    return await application(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/giyos/PycharmProjects/u13_task_manager/config/ws_middleware.py", line 17, in __call__
+    scope["user"] = payload.get('user_id')
+                    ^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'get'
+2026-07-13 19:54:38,479 [INFO] django.channels.server: WebSocket DISCONNECT /ws/notifications/ [127.0.0.1:50966]
+2026-07-13 19:56:27,563 [INFO] django.utils.autoreload: /Users/giyos/PycharmProjects/u13_task_manager/config/ws_middleware.py changed, reloading.
+2026-07-13 19:56:29,168 [INFO] daphne.server: HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2026-07-13 19:56:29,168 [INFO] daphne.server: Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2026-07-13 19:56:29,169 [INFO] daphne.server: Listening on TCP address 127.0.0.1:8000
+2026-07-13 19:56:38,109 [INFO] django.channels.server: WebSocket HANDSHAKING /ws/notifications/ [127.0.0.1:51474]
+2026-07-13 19:56:38,194 [INFO] django.channels.server: WebSocket REJECT /ws/notifications/ [127.0.0.1:51474]
+2026-07-13 19:56:38,195 [INFO] django.channels.server: WebSocket DISCONNECT /ws/notifications/ [127.0.0.1:51474]
+2026-07-13 19:56:56,850 [INFO] daphne.server: HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2026-07-13 19:56:56,850 [INFO] daphne.server: Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2026-07-13 19:56:56,850 [INFO] daphne.server: Listening on TCP address 127.0.0.1:8000
+2026-07-13 19:56:59,199 [INFO] django.channels.server: WebSocket HANDSHAKING /ws/notifications/ [127.0.0.1:51571]
+2026-07-13 19:56:59,273 [INFO] django.channels.server: WebSocket REJECT /ws/notifications/ [127.0.0.1:51571]
+2026-07-13 19:56:59,274 [INFO] django.channels.server: WebSocket DISCONNECT /ws/notifications/ [127.0.0.1:51571]
+2026-07-13 19:57:05,054 [INFO] django.channels.server: [mHTTP POST /accounts/auth-jwt/login-jwt-custom/ 200 [0.28, 127.0.0.1:51599][0m
+2026-07-13 19:57:21,884 [INFO] django.channels.server: WebSocket HANDSHAKING /ws/notifications/ [127.0.0.1:51673]
+2026-07-13 19:57:21,887 [INFO] django.channels.server: WebSocket REJECT /ws/notifications/ [127.0.0.1:51673]
+2026-07-13 19:57:21,893 [INFO] django.channels.server: WebSocket DISCONNECT /ws/notifications/ [127.0.0.1:51673]
+2026-07-13 19:57:30,596 [INFO] django.channels.server: [mHTTP POST /accounts/auth-jwt/login-jwt-custom/ 200 [0.22, 127.0.0.1:51599][0m
+2026-07-13 19:57:43,128 [INFO] django.channels.server: WebSocket HANDSHAKING /ws/notifications/ [127.0.0.1:51767]
+2026-07-13 19:57:43,181 [INFO] django.channels.server: WebSocket CONNECT /ws/notifications/ [127.0.0.1:51767]
+2026-07-13 19:57:55,980 [INFO] django.channels.server: [mHTTP GET /admin/notifications/notifications/add/ 200 [0.17, 127.0.0.1:51827][0m
+2026-07-13 19:57:56,150 [INFO] django.channels.server: [36mHTTP GET /static/admin/css/forms.css 304 [0.03, 127.0.0.1:51832][0m
+2026-07-13 19:57:56,152 [INFO] django.channels.server: [36mHTTP GET /static/admin/js/theme.js 304 [0.06, 127.0.0.1:51828][0m
+2026-07-13 19:57:56,153 [INFO] django.channels.server: [36mHTTP GET /static/admin/css/dark_mode.css 304 [0.04, 127.0.0.1:51830][0m
+2026-07-13 19:57:56,153 [INFO] django.channels.server: [36mHTTP GET /static/admin/css/base.css 304 [0.04, 127.0.0.1:51831][0m
+2026-07-13 19:57:56,155 [INFO] django.channels.server: [36mHTTP GET /static/admin/css/nav_sidebar.css 304 [0.04, 127.0.0.1:51833][0m
+2026-07-13 19:57:56,177 [INFO] django.channels.server: [36mHTTP GET /static/admin/css/responsive.css 304 [0.02, 127.0.0.1:51832][0m
+2026-07-13 19:57:56,180 [INFO] django.channels.server: [36mHTTP GET /static/debug_toolbar/css/toolbar.css 304 [0.02, 127.0.0.1:51828][0m
+2026-07-13 19:57:56,181 [INFO] django.channels.server: [36mHTTP GET /static/admin/js/vendor/jquery/jquery.js 304 [0.01, 127.0.0.1:51831][0m
+2026-07-13 19:57:56,182 [INFO] django.channels.server: [36mHTTP GET /static/admin/js/admin/RelatedObjectLookups.js 304 [0.02, 127.0.0.1:51830][0m
+2026-07-13 19:57:56,189 [INFO] django.channels.server: [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.02, 127.0.0.1:51833][0m
+2026-07-13 19:57:56,222 [INFO] django.channels.server: [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:51830][0m
+2026-07-13 19:57:56,225 [INFO] django.channels.server: [36mHTTP GET /static/admin/js/core.js 304 [0.02, 127.0.0.1:51828][0m
+2026-07-13 19:57:56,226 [INFO] django.channels.server: [36mHTTP GET /static/admin/css/widgets.css 304 [0.03, 127.0.0.1:51832][0m
+2026-07-13 19:57:56,226 [INFO] django.channels.server: [36mHTTP GET /static/admin/js/actions.js 304 [0.02, 127.0.0.1:51831][0m
+2026-07-13 19:57:56,230 [INFO] django.channels.server: [36mHTTP GET /static/admin/js/vendor/xregexp/xregexp.js 304 [0.02, 127.0.0.1:51833][0m
+2026-07-13 19:57:56,236 [INFO] django.channels.server: [36mHTTP GET /static/admin/js/prepopulate.js 304 [0.01, 127.0.0.1:51830][0m
+2026-07-13 19:57:56,239 [INFO] django.channels.server: [36mHTTP GET /static/admin/js/prepopulate_init.js 304 [0.01, 127.0.0.1:51828][0m
+2026-07-13 19:57:56,240 [INFO] django.channels.server: [36mHTTP GET /static/debug_toolbar/js/toolbar.js 304 [0.01, 127.0.0.1:51832][0m
+2026-07-13 19:57:56,259 [INFO] django.channels.server: [36mHTTP GET /static/admin/js/nav_sidebar.js 304 [0.01, 127.0.0.1:51832][0m
+2026-07-13 19:57:56,265 [INFO] django.channels.server: [36mHTTP GET /static/admin/js/change_form.js 304 [0.00, 127.0.0.1:51832][0m
+2026-07-13 19:57:56,275 [INFO] django.channels.server: [mHTTP GET /admin/jsi18n/ 200 [0.18, 127.0.0.1:51827][0m
+2026-07-13 19:57:56,305 [WARNING] django.request: Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2026-07-13 19:57:56,306 [WARNING] django.channels.server: [33mHTTP GET /.well-known/appspecific/com.chrome.devtools.json 404 [0.08, 127.0.0.1:51831][0m
+2026-07-13 19:57:56,319 [INFO] django.channels.server: [36mHTTP GET /static/debug_toolbar/css/print.css 304 [0.01, 127.0.0.1:51831][0m
+2026-07-13 19:57:56,326 [INFO] django.channels.server: [36mHTTP GET /static/admin/img/icon-addlink.svg 304 [0.01, 127.0.0.1:51827][0m
+2026-07-13 19:57:56,391 [INFO] django.channels.server: [36mHTTP GET /static/debug_toolbar/js/utils.js 304 [0.00, 127.0.0.1:51827][0m
+2026-07-13 19:58:03,108 [INFO] django.channels.server: [32mHTTP POST /admin/notifications/notifications/add/ 302 [0.08, 127.0.0.1:51827][0m
+2026-07-13 19:58:03,186 [INFO] django.channels.server: [mHTTP GET /admin/notifications/notifications/ 200 [0.07, 127.0.0.1:51827][0m
+2026-07-13 19:58:03,213 [INFO] django.channels.server: [36mHTTP GET /static/admin/css/dark_mode.css 304 [0.00, 127.0.0.1:51832][0m
+2026-07-13 19:58:03,213 [INFO] django.channels.server: [36mHTTP GET /static/admin/js/theme.js 304 [0.00, 127.0.0.1:51830][0m
+2026-07-13 19:58:03,213 [INFO] django.channels.server: [36mHTTP GET /static/admin/css/nav_sidebar.css 304 [0.00, 127.0.0.1:51828][0m
+2026-07-13 19:58:03,214 [INFO] django.channels.server: [36mHTTP GET /static/admin/css/base.css 304 [0.01, 127.0.0.1:51831][0m
+2026-07-13 19:58:03,214 [INFO] django.channels.server: [36mHTTP GET /static/admin/js/vendor/jquery/jquery.js 304 [0.00, 127.0.0.1:51833][0m
+2026-07-13 19:58:03,228 [INFO] django.channels.server: [36mHTTP GET /static/admin/css/changelists.css 304 [0.01, 127.0.0.1:51832][0m
+2026-07-13 19:58:03,229 [INFO] django.channels.server: [36mHTTP GET /static/admin/css/responsive.css 304 [0.01, 127.0.0.1:51830][0m
+2026-07-13 19:58:03,229 [INFO] django.channels.server: [36mHTTP GET /static/admin/js/core.js 304 [0.01, 127.0.0.1:51833][0m
+2026-07-13 19:58:03,229 [INFO] django.channels.server: [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:51831][0m
+2026-07-13 19:58:03,230 [INFO] django.channels.server: [36mHTTP GET /static/debug_toolbar/css/toolbar.css 304 [0.01, 127.0.0.1:51828][0m
+2026-07-13 19:58:03,236 [INFO] django.channels.server: [36mHTTP GET /static/admin/js/admin/RelatedObjectLookups.js 304 [0.01, 127.0.0.1:51832][0m
+2026-07-13 19:58:03,237 [INFO] django.channels.server: [36mHTTP GET /static/admin/js/prepopulate.js 304 [0.01, 127.0.0.1:51831][0m
+2026-07-13 19:58:03,237 [INFO] django.channels.server: [36mHTTP GET /static/admin/js/vendor/xregexp/xregexp.js 304 [0.01, 127.0.0.1:51828][0m
+2026-07-13 19:58:03,237 [INFO] django.channels.server: [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:51833][0m
+2026-07-13 19:58:03,238 [INFO] django.channels.server: [36mHTTP GET /static/admin/js/actions.js 304 [0.01, 127.0.0.1:51830][0m
+2026-07-13 19:58:03,241 [INFO] django.channels.server: [36mHTTP GET /static/debug_toolbar/js/toolbar.js 304 [0.00, 127.0.0.1:51832][0m
+2026-07-13 19:58:03,245 [INFO] django.channels.server: [36mHTTP GET /static/admin/js/nav_sidebar.js 304 [0.00, 127.0.0.1:51832][0m
+2026-07-13 19:58:03,258 [INFO] django.channels.server: [36mHTTP GET /static/admin/js/filters.js 304 [0.01, 127.0.0.1:51832][0m
+2026-07-13 19:58:03,270 [INFO] django.channels.server: [mHTTP GET /admin/jsi18n/ 200 [0.06, 127.0.0.1:51827][0m
+2026-07-13 19:58:03,278 [INFO] django.channels.server: [36mHTTP GET /static/debug_toolbar/css/print.css 304 [0.00, 127.0.0.1:51827][0m
+2026-07-13 19:58:03,285 [INFO] django.channels.server: [36mHTTP GET /static/admin/img/icon-yes.svg 304 [0.00, 127.0.0.1:51830][0m
+2026-07-13 19:58:03,285 [INFO] django.channels.server: [36mHTTP GET /static/admin/img/tooltag-add.svg 304 [0.00, 127.0.0.1:51833][0m
+2026-07-13 19:58:03,285 [INFO] django.channels.server: [36mHTTP GET /static/admin/img/icon-addlink.svg 304 [0.01, 127.0.0.1:51832][0m
+2026-07-13 19:58:03,295 [INFO] django.channels.server: [36mHTTP GET /static/debug_toolbar/js/utils.js 304 [0.01, 127.0.0.1:51832][0m
+2026-07-13 19:58:17,574 [INFO] django.channels.server: WebSocket DISCONNECT /ws/notifications/ [127.0.0.1:51767]
+2026-07-13 19:59:01,606 [INFO] django.channels.server: WebSocket HANDSHAKING /ws/notifications/ [127.0.0.1:51853]
+2026-07-13 19:59:01,638 [INFO] django.channels.server: WebSocket CONNECT /ws/notifications/ [127.0.0.1:51853]
+2026-07-13 19:59:12,372 [INFO] django.channels.server: [mHTTP GET /admin/notifications/notifications/add/ 200 [0.11, 127.0.0.1:51859][0m
+2026-07-13 19:59:12,396 [INFO] django.channels.server: [36mHTTP GET /static/admin/css/forms.css 304 [0.00, 127.0.0.1:51860][0m
+2026-07-13 19:59:12,396 [INFO] django.channels.server: [36mHTTP GET /static/admin/css/base.css 304 [0.00, 127.0.0.1:51862][0m
+2026-07-13 19:59:12,397 [INFO] django.channels.server: [36mHTTP GET /static/admin/css/dark_mode.css 304 [0.00, 127.0.0.1:51863][0m
+2026-07-13 19:59:12,397 [INFO] django.channels.server: [36mHTTP GET /static/admin/css/nav_sidebar.css 304 [0.00, 127.0.0.1:51864][0m
+2026-07-13 19:59:12,397 [INFO] django.channels.server: [36mHTTP GET /static/admin/js/theme.js 304 [0.00, 127.0.0.1:51865][0m
+2026-07-13 19:59:12,401 [INFO] django.channels.server: [36mHTTP GET /static/admin/css/responsive.css 304 [0.00, 127.0.0.1:51860][0m
+2026-07-13 19:59:12,401 [INFO] django.channels.server: [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.00, 127.0.0.1:51864][0m
+2026-07-13 19:59:12,402 [INFO] django.channels.server: [36mHTTP GET /static/admin/js/core.js 304 [0.00, 127.0.0.1:51865][0m
+2026-07-13 19:59:12,402 [INFO] django.channels.server: [36mHTTP GET /static/debug_toolbar/css/toolbar.css 304 [0.00, 127.0.0.1:51862][0m
+2026-07-13 19:59:12,402 [INFO] django.channels.server: [36mHTTP GET /static/admin/js/vendor/jquery/jquery.js 304 [0.00, 127.0.0.1:51863][0m
+2026-07-13 19:59:12,407 [INFO] django.channels.server: [36mHTTP GET /static/admin/js/admin/RelatedObjectLookups.js 304 [0.01, 127.0.0.1:51860][0m
+2026-07-13 19:59:12,409 [INFO] django.channels.server: [36mHTTP GET /static/admin/js/actions.js 304 [0.00, 127.0.0.1:51862][0m
+2026-07-13 19:59:12,409 [INFO] django.channels.server: [36mHTTP GET /static/admin/js/prepopulate.js 304 [0.00, 127.0.0.1:51865][0m
+2026-07-13 19:59:12,409 [INFO] django.channels.server: [36mHTTP GET /static/admin/js/vendor/xregexp/xregexp.js 304 [0.00, 127.0.0.1:51863][0m
+2026-07-13 19:59:12,409 [INFO] django.channels.server: [36mHTTP GET /static/admin/js/urlify.js 304 [0.00, 127.0.0.1:51864][0m
+2026-07-13 19:59:12,417 [INFO] django.channels.server: [36mHTTP GET /static/admin/css/widgets.css 304 [0.01, 127.0.0.1:51860][0m
+2026-07-13 19:59:12,419 [INFO] django.channels.server: [36mHTTP GET /static/admin/js/prepopulate_init.js 304 [0.01, 127.0.0.1:51862][0m
+2026-07-13 19:59:12,420 [INFO] django.channels.server: [36mHTTP GET /static/debug_toolbar/js/toolbar.js 304 [0.01, 127.0.0.1:51865][0m
+2026-07-13 19:59:12,426 [INFO] django.channels.server: [36mHTTP GET /static/admin/js/nav_sidebar.js 304 [0.00, 127.0.0.1:51865][0m
+2026-07-13 19:59:12,428 [INFO] django.channels.server: [36mHTTP GET /static/admin/js/change_form.js 304 [0.00, 127.0.0.1:51865][0m
+2026-07-13 19:59:12,436 [INFO] django.channels.server: [mHTTP GET /admin/jsi18n/ 200 [0.04, 127.0.0.1:51859][0m
+2026-07-13 19:59:12,448 [INFO] django.channels.server: [36mHTTP GET /static/debug_toolbar/css/print.css 304 [0.00, 127.0.0.1:51859][0m
+2026-07-13 19:59:12,452 [INFO] django.channels.server: [36mHTTP GET /static/admin/img/icon-addlink.svg 304 [0.00, 127.0.0.1:51859][0m
+2026-07-13 19:59:12,462 [INFO] django.channels.server: [36mHTTP GET /static/debug_toolbar/js/utils.js 304 [0.01, 127.0.0.1:51859][0m
+2026-07-13 19:59:33,964 [INFO] django.channels.server: [32mHTTP POST /admin/notifications/notifications/add/ 302 [0.08, 127.0.0.1:51859][0m
+2026-07-13 19:59:34,026 [INFO] django.channels.server: [mHTTP GET /admin/notifications/notifications/ 200 [0.06, 127.0.0.1:51859][0m
+2026-07-13 19:59:34,059 [INFO] django.channels.server: [36mHTTP GET /static/admin/css/dark_mode.css 304 [0.01, 127.0.0.1:51862][0m
+2026-07-13 19:59:34,060 [INFO] django.channels.server: [36mHTTP GET /static/admin/js/theme.js 304 [0.01, 127.0.0.1:51864][0m
+2026-07-13 19:59:34,060 [INFO] django.channels.server: [36mHTTP GET /static/admin/css/base.css 304 [0.01, 127.0.0.1:51865][0m
+2026-07-13 19:59:34,061 [INFO] django.channels.server: [36mHTTP GET /static/admin/css/nav_sidebar.css 304 [0.01, 127.0.0.1:51860][0m
+2026-07-13 19:59:34,061 [INFO] django.channels.server: [36mHTTP GET /static/admin/css/changelists.css 304 [0.01, 127.0.0.1:51863][0m
+2026-07-13 19:59:34,073 [INFO] django.channels.server: [36mHTTP GET /static/debug_toolbar/css/toolbar.css 304 [0.01, 127.0.0.1:51862][0m
+2026-07-13 19:59:34,074 [INFO] django.channels.server: [36mHTTP GET /static/admin/css/responsive.css 304 [0.01, 127.0.0.1:51864][0m
+2026-07-13 19:59:34,075 [INFO] django.channels.server: [36mHTTP GET /static/admin/js/vendor/jquery/jquery.js 304 [0.01, 127.0.0.1:51865][0m
+2026-07-13 19:59:34,077 [INFO] django.channels.server: [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:51860][0m
+2026-07-13 19:59:34,079 [INFO] django.channels.server: [36mHTTP GET /static/admin/js/core.js 304 [0.01, 127.0.0.1:51863][0m
+2026-07-13 19:59:34,109 [INFO] django.channels.server: [36mHTTP GET /static/admin/js/admin/RelatedObjectLookups.js 304 [0.03, 127.0.0.1:51862][0m
+2026-07-13 19:59:34,117 [INFO] django.channels.server: [36mHTTP GET /static/admin/js/actions.js 304 [0.03, 127.0.0.1:51860][0m
+2026-07-13 19:59:34,122 [INFO] django.channels.server: [36mHTTP GET /static/admin/js/urlify.js 304 [0.04, 127.0.0.1:51864][0m
+2026-07-13 19:59:34,125 [INFO] django.channels.server: [36mHTTP GET /static/admin/js/prepopulate.js 304 [0.04, 127.0.0.1:51865][0m
+2026-07-13 19:59:34,126 [INFO] django.channels.server: [36mHTTP GET /static/admin/js/vendor/xregexp/xregexp.js 304 [0.04, 127.0.0.1:51863][0m
+2026-07-13 19:59:34,137 [INFO] django.channels.server: [36mHTTP GET /static/debug_toolbar/js/toolbar.js 304 [0.02, 127.0.0.1:51862][0m
+2026-07-13 19:59:34,144 [INFO] django.channels.server: [36mHTTP GET /static/admin/js/nav_sidebar.js 304 [0.00, 127.0.0.1:51862][0m
+2026-07-13 19:59:34,154 [INFO] django.channels.server: [mHTTP GET /admin/jsi18n/ 200 [0.11, 127.0.0.1:51859][0m
+2026-07-13 19:59:34,159 [INFO] django.channels.server: [36mHTTP GET /static/admin/js/filters.js 304 [0.00, 127.0.0.1:51862][0m
+2026-07-13 19:59:34,167 [INFO] django.channels.server: [36mHTTP GET /static/debug_toolbar/css/print.css 304 [0.00, 127.0.0.1:51862][0m
+2026-07-13 19:59:34,174 [INFO] django.channels.server: [36mHTTP GET /static/admin/img/icon-yes.svg 304 [0.01, 127.0.0.1:51863][0m
+2026-07-13 19:59:34,175 [INFO] django.channels.server: [36mHTTP GET /static/admin/img/tooltag-add.svg 304 [0.01, 127.0.0.1:51865][0m
+2026-07-13 19:59:34,184 [INFO] django.channels.server: [36mHTTP GET /static/admin/img/icon-addlink.svg 304 [0.02, 127.0.0.1:51859][0m
+2026-07-13 19:59:34,189 [INFO] django.channels.server: [36mHTTP GET /static/debug_toolbar/js/utils.js 304 [0.02, 127.0.0.1:51862][0m
+2026-07-13 20:10:53,253 [INFO] django.utils.autoreload: /Users/giyos/PycharmProjects/u13_task_manager/tasks/views.py changed, reloading.

@@ -12,6 +12,7 @@ from rest_framework.viewsets import ModelViewSet, GenericViewSet
 # from django.contrib.postgres.search import TrigramSimilarity
 from django_filters.rest_framework import DjangoFilterBackend
 
+from notifications.models import Notifications
 from tasks.models import Project, Task
 from tasks.paginations import CustomPagination
 from tasks.serializers import ProjectList, ProjectCreateAndUpdateSerializer, TaskListSerializer, \
