@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'tasks',
     "accounts",
     "chat",
+    "notifications",
 
     # 3 rd
     "rest_framework",
