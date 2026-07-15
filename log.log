@@ -1333,3 +1333,263 @@ AttributeError: 'str' object has no attribute 'get'
 2026-07-13 19:59:34,184 [INFO] django.channels.server: [36mHTTP GET /static/admin/img/icon-addlink.svg 304 [0.02, 127.0.0.1:51859][0m
 2026-07-13 19:59:34,189 [INFO] django.channels.server: [36mHTTP GET /static/debug_toolbar/js/utils.js 304 [0.02, 127.0.0.1:51862][0m
 2026-07-13 20:10:53,253 [INFO] django.utils.autoreload: /Users/giyos/PycharmProjects/u13_task_manager/tasks/views.py changed, reloading.
+2026-07-15 19:09:22,395 [INFO] daphne.server: HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2026-07-15 19:09:22,395 [INFO] daphne.server: Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2026-07-15 19:09:22,395 [INFO] daphne.server: Listening on TCP address 127.0.0.1:8000
+2026-07-15 19:09:24,315 [INFO] django.channels.server: [mHTTP GET / 200 [0.15, 127.0.0.1:58352][0m
+2026-07-15 19:09:24,892 [INFO] django.channels.server: [mHTTP GET /static/drf-yasg/style.css 200 [0.04, 127.0.0.1:58352][0m
+2026-07-15 19:09:24,895 [INFO] django.channels.server: [mHTTP GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css 200 [0.04, 127.0.0.1:58353][0m
+2026-07-15 19:09:24,897 [INFO] django.channels.server: [mHTTP GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js 200 [0.03, 127.0.0.1:58357][0m
+2026-07-15 19:09:24,901 [INFO] django.channels.server: [mHTTP GET /static/drf-yasg/immutable.min.js 200 [0.03, 127.0.0.1:58359][0m
+2026-07-15 19:09:24,906 [INFO] django.channels.server: [mHTTP GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js 200 [0.04, 127.0.0.1:58356][0m
+2026-07-15 19:09:24,908 [INFO] django.channels.server: [mHTTP GET /static/drf-yasg/insQ.min.js 200 [0.04, 127.0.0.1:58358][0m
+2026-07-15 19:09:24,928 [INFO] django.channels.server: [mHTTP GET /static/debug_toolbar/css/toolbar.css 200 [0.03, 127.0.0.1:58352][0m
+2026-07-15 19:09:24,935 [INFO] django.channels.server: [mHTTP GET /static/drf-yasg/swagger-ui-init.js 200 [0.03, 127.0.0.1:58353][0m
+2026-07-15 19:09:24,936 [INFO] django.channels.server: [mHTTP GET /static/debug_toolbar/js/toolbar.js 200 [0.03, 127.0.0.1:58357][0m
+2026-07-15 19:09:25,034 [INFO] django.channels.server: [mHTTP GET /static/debug_toolbar/css/print.css 200 [0.00, 127.0.0.1:58353][0m
+2026-07-15 19:09:25,036 [INFO] django.channels.server: [mHTTP GET /static/debug_toolbar/js/utils.js 200 [0.00, 127.0.0.1:58356][0m
+2026-07-15 19:09:25,104 [INFO] django.channels.server: [mHTTP GET /?format=openapi 200 [0.05, 127.0.0.1:58356][0m
+2026-07-15 19:09:25,214 [INFO] django.channels.server: [mHTTP GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png 200 [0.00, 127.0.0.1:58356][0m
+2026-07-15 19:09:33,205 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.05, 127.0.0.1:58356][0m
+2026-07-15 19:09:36,274 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.04, 127.0.0.1:58356][0m
+2026-07-15 19:09:36,936 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.02, 127.0.0.1:58356][0m
+2026-07-15 19:09:37,441 [WARNING] django.request: Too Many Requests: /task/projects/
+2026-07-15 19:09:37,441 [WARNING] django.channels.server: [31;1mHTTP GET /task/projects/ 429 [0.02, 127.0.0.1:58356][0m
+2026-07-15 19:09:37,974 [WARNING] django.request: Too Many Requests: /task/projects/
+2026-07-15 19:09:37,975 [WARNING] django.channels.server: [31;1mHTTP GET /task/projects/ 429 [0.02, 127.0.0.1:58356][0m
+2026-07-15 19:09:46,042 [WARNING] django.request: Too Many Requests: /task/projects/
+2026-07-15 19:09:46,044 [WARNING] django.channels.server: [31;1mHTTP GET /task/projects/ 429 [0.05, 127.0.0.1:58356][0m
+2026-07-15 19:09:49,271 [WARNING] django.request: Too Many Requests: /task/projects/
+2026-07-15 19:09:49,272 [WARNING] django.channels.server: [31;1mHTTP GET /task/projects/ 429 [0.02, 127.0.0.1:58356][0m
+2026-07-15 19:09:50,439 [WARNING] django.request: Too Many Requests: /task/projects/
+2026-07-15 19:09:50,439 [WARNING] django.channels.server: [31;1mHTTP GET /task/projects/ 429 [0.02, 127.0.0.1:58356][0m
+2026-07-15 19:09:51,140 [WARNING] django.request: Too Many Requests: /task/projects/
+2026-07-15 19:09:51,141 [WARNING] django.channels.server: [31;1mHTTP GET /task/projects/ 429 [0.02, 127.0.0.1:58356][0m
+2026-07-15 19:09:51,821 [WARNING] django.request: Too Many Requests: /task/projects/
+2026-07-15 19:09:51,822 [WARNING] django.channels.server: [31;1mHTTP GET /task/projects/ 429 [0.01, 127.0.0.1:58356][0m
+2026-07-15 19:09:52,436 [WARNING] django.request: Too Many Requests: /task/projects/
+2026-07-15 19:09:52,436 [WARNING] django.channels.server: [31;1mHTTP GET /task/projects/ 429 [0.02, 127.0.0.1:58356][0m
+2026-07-15 19:09:52,938 [WARNING] django.request: Too Many Requests: /task/projects/
+2026-07-15 19:09:52,939 [WARNING] django.channels.server: [31;1mHTTP GET /task/projects/ 429 [0.01, 127.0.0.1:58356][0m
+2026-07-15 19:10:30,956 [INFO] django.channels.server: [32mHTTP GET /admin 301 [0.09, 127.0.0.1:58356][0m
+2026-07-15 19:10:30,978 [INFO] django.channels.server: [32mHTTP GET /admin/ 302 [0.02, 127.0.0.1:58356][0m
+2026-07-15 19:10:31,085 [INFO] django.channels.server: [mHTTP GET /admin/login/?next=/admin/ 200 [0.10, 127.0.0.1:58356][0m
+2026-07-15 19:10:31,135 [INFO] django.channels.server: [mHTTP GET /static/admin/css/dark_mode.css 200 [0.02, 127.0.0.1:58384][0m
+2026-07-15 19:10:31,136 [INFO] django.channels.server: [mHTTP GET /static/admin/css/base.css 200 [0.02, 127.0.0.1:58356][0m
+2026-07-15 19:10:31,138 [INFO] django.channels.server: [mHTTP GET /static/admin/css/login.css 200 [0.02, 127.0.0.1:58386][0m
+2026-07-15 19:10:31,138 [INFO] django.channels.server: [mHTTP GET /static/admin/css/nav_sidebar.css 200 [0.02, 127.0.0.1:58385][0m
+2026-07-15 19:10:31,139 [INFO] django.channels.server: [mHTTP GET /static/admin/css/responsive.css 200 [0.02, 127.0.0.1:58387][0m
+2026-07-15 19:10:31,139 [INFO] django.channels.server: [mHTTP GET /static/admin/js/theme.js 200 [0.02, 127.0.0.1:58388][0m
+2026-07-15 19:10:31,157 [INFO] django.channels.server: [mHTTP GET /static/admin/js/nav_sidebar.js 200 [0.01, 127.0.0.1:58387][0m
+2026-07-15 19:10:31,270 [WARNING] django.request: Not Found: /favicon.ico
+2026-07-15 19:10:31,272 [WARNING] django.channels.server: [33mHTTP GET /favicon.ico 404 [0.09, 127.0.0.1:58387][0m
+2026-07-15 19:10:34,613 [INFO] django.channels.server: [32mHTTP POST /admin/login/?next=/admin/ 302 [0.24, 127.0.0.1:58387][0m
+2026-07-15 19:10:34,666 [INFO] django.channels.server: [mHTTP GET /admin/ 200 [0.05, 127.0.0.1:58387][0m
+2026-07-15 19:10:34,682 [INFO] django.channels.server: [mHTTP GET /static/admin/css/dashboard.css 200 [0.01, 127.0.0.1:58387][0m
+2026-07-15 19:10:34,690 [INFO] django.channels.server: [mHTTP GET /static/admin/img/icon-addlink.svg 200 [0.00, 127.0.0.1:58387][0m
+2026-07-15 19:10:34,691 [INFO] django.channels.server: [mHTTP GET /static/admin/img/icon-changelink.svg 200 [0.01, 127.0.0.1:58388][0m
+2026-07-15 19:10:39,177 [INFO] django.channels.server: [mHTTP GET / 200 [0.05, 127.0.0.1:58388][0m
+2026-07-15 19:10:39,363 [INFO] django.channels.server: [mHTTP GET /?format=openapi 200 [0.05, 127.0.0.1:58388][0m
+2026-07-15 19:10:45,089 [INFO] django.channels.server: [mHTTP GET / 200 [0.05, 127.0.0.1:58388][0m
+2026-07-15 19:10:45,214 [INFO] django.channels.server: [mHTTP GET /?format=openapi 200 [0.07, 127.0.0.1:58388][0m
+2026-07-15 19:10:45,779 [INFO] django.channels.server: [mHTTP GET / 200 [0.03, 127.0.0.1:58388][0m
+2026-07-15 19:10:45,864 [INFO] django.channels.server: [mHTTP GET /?format=openapi 200 [0.05, 127.0.0.1:58388][0m
+2026-07-15 19:10:46,008 [INFO] django.channels.server: [mHTTP GET / 200 [0.02, 127.0.0.1:58388][0m
+2026-07-15 19:10:46,073 [INFO] django.channels.server: [mHTTP GET /?format=openapi 200 [0.04, 127.0.0.1:58388][0m
+2026-07-15 19:11:04,878 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.05, 127.0.0.1:58388][0m
+2026-07-15 19:11:07,627 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.03, 127.0.0.1:58388][0m
+2026-07-15 19:11:08,101 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.04, 127.0.0.1:58388][0m
+2026-07-15 19:11:08,928 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.04, 127.0.0.1:58388][0m
+2026-07-15 19:11:09,985 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.03, 127.0.0.1:58388][0m
+2026-07-15 19:11:10,529 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.04, 127.0.0.1:58388][0m
+2026-07-15 19:11:11,025 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.03, 127.0.0.1:58388][0m
+2026-07-15 19:11:11,538 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.05, 127.0.0.1:58388][0m
+2026-07-15 19:11:11,841 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.03, 127.0.0.1:58388][0m
+2026-07-15 19:11:12,072 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.03, 127.0.0.1:58388][0m
+2026-07-15 19:11:12,299 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.03, 127.0.0.1:58388][0m
+2026-07-15 19:11:12,498 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.02, 127.0.0.1:58388][0m
+2026-07-15 19:11:12,694 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.02, 127.0.0.1:58388][0m
+2026-07-15 19:11:12,897 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.03, 127.0.0.1:58388][0m
+2026-07-15 19:11:13,167 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.03, 127.0.0.1:58388][0m
+2026-07-15 19:11:13,364 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.03, 127.0.0.1:58388][0m
+2026-07-15 19:11:13,604 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.03, 127.0.0.1:58388][0m
+2026-07-15 19:11:13,798 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.02, 127.0.0.1:58388][0m
+2026-07-15 19:11:13,980 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.04, 127.0.0.1:58388][0m
+2026-07-15 19:11:17,865 [WARNING] django.request: Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2026-07-15 19:11:17,866 [WARNING] django.channels.server: [33mHTTP GET /.well-known/appspecific/com.chrome.devtools.json 404 [0.04, 127.0.0.1:58388][0m
+2026-07-15 19:11:18,083 [INFO] django.channels.server: [mHTTP GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css.map 200 [0.02, 127.0.0.1:58388][0m
+2026-07-15 19:12:03,034 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.04, 127.0.0.1:58388][0m
+2026-07-15 19:12:03,558 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.03, 127.0.0.1:58388][0m
+2026-07-15 19:12:03,910 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.03, 127.0.0.1:58388][0m
+2026-07-15 19:12:04,203 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.02, 127.0.0.1:58388][0m
+2026-07-15 19:12:04,469 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.03, 127.0.0.1:58388][0m
+2026-07-15 19:12:44,583 [INFO] django.utils.autoreload: /Users/giyos/PycharmProjects/u13_task_manager/config/settings.py changed, reloading.
+2026-07-15 19:12:57,794 [INFO] daphne.server: HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2026-07-15 19:12:57,794 [INFO] daphne.server: Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2026-07-15 19:12:57,794 [INFO] daphne.server: Listening on TCP address 127.0.0.1:8000
+2026-07-15 19:13:02,747 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.12, 127.0.0.1:58603][0m
+2026-07-15 19:13:03,464 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.05, 127.0.0.1:58603][0m
+2026-07-15 19:13:04,313 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.10, 127.0.0.1:58603][0m
+2026-07-15 19:13:04,939 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.05, 127.0.0.1:58603][0m
+2026-07-15 19:13:05,441 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.03, 127.0.0.1:58603][0m
+2026-07-15 19:13:05,981 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.03, 127.0.0.1:58603][0m
+2026-07-15 19:13:06,478 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.03, 127.0.0.1:58603][0m
+2026-07-15 19:13:06,949 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.03, 127.0.0.1:58603][0m
+2026-07-15 19:13:07,414 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.03, 127.0.0.1:58603][0m
+2026-07-15 19:13:07,923 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.04, 127.0.0.1:58603][0m
+2026-07-15 19:13:08,558 [WARNING] django.request: Too Many Requests: /task/projects/
+2026-07-15 19:13:08,559 [WARNING] django.channels.server: [31;1mHTTP GET /task/projects/ 429 [0.04, 127.0.0.1:58603][0m
+2026-07-15 19:13:14,851 [INFO] django.channels.server: [mHTTP GET /admin/ 200 [0.11, 127.0.0.1:58603][0m
+2026-07-15 19:13:17,810 [INFO] django.channels.server: [mHTTP POST /admin/logout/ 200 [0.06, 127.0.0.1:58603][0m
+2026-07-15 19:13:19,971 [INFO] django.channels.server: [32mHTTP GET /admin/ 302 [0.02, 127.0.0.1:58603][0m
+2026-07-15 19:13:20,000 [INFO] django.channels.server: [mHTTP GET /admin/login/?next=/admin/ 200 [0.03, 127.0.0.1:58603][0m
+2026-07-15 19:13:22,561 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.04, 127.0.0.1:58603][0m
+2026-07-15 19:13:26,094 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.04, 127.0.0.1:58603][0m
+2026-07-15 19:13:27,025 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.04, 127.0.0.1:58603][0m
+2026-07-15 19:13:27,920 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.03, 127.0.0.1:58603][0m
+2026-07-15 19:13:28,692 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.04, 127.0.0.1:58603][0m
+2026-07-15 19:13:29,340 [WARNING] django.request: Too Many Requests: /task/projects/
+2026-07-15 19:13:29,341 [WARNING] django.channels.server: [31;1mHTTP GET /task/projects/ 429 [0.02, 127.0.0.1:58603][0m
+2026-07-15 19:13:35,961 [WARNING] django.request: Too Many Requests: /task/projects/
+2026-07-15 19:13:35,964 [WARNING] django.channels.server: [31;1mHTTP GET /task/projects/ 429 [0.02, 127.0.0.1:58603][0m
+2026-07-15 19:13:36,626 [WARNING] django.request: Too Many Requests: /task/projects/
+2026-07-15 19:13:36,627 [WARNING] django.channels.server: [31;1mHTTP GET /task/projects/ 429 [0.02, 127.0.0.1:58603][0m
+2026-07-15 19:13:37,533 [WARNING] django.request: Too Many Requests: /task/projects/
+2026-07-15 19:13:37,533 [WARNING] django.channels.server: [31;1mHTTP GET /task/projects/ 429 [0.02, 127.0.0.1:58603][0m
+2026-07-15 19:13:38,097 [WARNING] django.request: Too Many Requests: /task/projects/
+2026-07-15 19:13:38,097 [WARNING] django.channels.server: [31;1mHTTP GET /task/projects/ 429 [0.02, 127.0.0.1:58603][0m
+2026-07-15 19:13:38,709 [WARNING] django.request: Too Many Requests: /task/projects/
+2026-07-15 19:13:38,709 [WARNING] django.channels.server: [31;1mHTTP GET /task/projects/ 429 [0.03, 127.0.0.1:58603][0m
+2026-07-15 19:16:52,743 [INFO] django.utils.autoreload: /Users/giyos/PycharmProjects/u13_task_manager/tasks/views.py changed, reloading.
+2026-07-15 19:17:07,142 [INFO] daphne.server: HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2026-07-15 19:17:07,142 [INFO] daphne.server: Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2026-07-15 19:17:07,142 [INFO] daphne.server: Listening on TCP address 127.0.0.1:8000
+2026-07-15 19:17:30,869 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.11, 127.0.0.1:58641][0m
+2026-07-15 19:17:31,812 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.03, 127.0.0.1:58641][0m
+2026-07-15 19:17:33,356 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.04, 127.0.0.1:58641][0m
+2026-07-15 19:17:33,974 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.05, 127.0.0.1:58641][0m
+2026-07-15 19:17:34,479 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.03, 127.0.0.1:58641][0m
+2026-07-15 19:17:34,988 [WARNING] django.request: Too Many Requests: /task/projects/
+2026-07-15 19:17:34,992 [WARNING] django.channels.server: [31;1mHTTP GET /task/projects/ 429 [0.02, 127.0.0.1:58641][0m
+2026-07-15 19:17:35,584 [WARNING] django.request: Too Many Requests: /task/projects/
+2026-07-15 19:17:35,585 [WARNING] django.channels.server: [31;1mHTTP GET /task/projects/ 429 [0.03, 127.0.0.1:58641][0m
+2026-07-15 19:17:36,879 [WARNING] django.request: Too Many Requests: /task/projects/
+2026-07-15 19:17:36,880 [WARNING] django.channels.server: [31;1mHTTP GET /task/projects/ 429 [0.03, 127.0.0.1:58641][0m
+2026-07-15 19:17:40,116 [INFO] django.channels.server: [32mHTTP POST /admin/login/?next=/admin/ 302 [0.21, 127.0.0.1:58641][0m
+2026-07-15 19:17:40,189 [INFO] django.channels.server: [mHTTP GET /admin/ 200 [0.07, 127.0.0.1:58641][0m
+2026-07-15 19:17:42,364 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.05, 127.0.0.1:58641][0m
+2026-07-15 19:17:43,195 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.04, 127.0.0.1:58641][0m
+2026-07-15 19:17:43,847 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.04, 127.0.0.1:58641][0m
+2026-07-15 19:17:44,476 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.03, 127.0.0.1:58641][0m
+2026-07-15 19:17:45,103 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.03, 127.0.0.1:58641][0m
+2026-07-15 19:17:45,582 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.04, 127.0.0.1:58641][0m
+2026-07-15 19:17:46,069 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.03, 127.0.0.1:58641][0m
+2026-07-15 19:17:46,626 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.04, 127.0.0.1:58641][0m
+2026-07-15 19:17:47,175 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.03, 127.0.0.1:58641][0m
+2026-07-15 19:17:47,692 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.04, 127.0.0.1:58641][0m
+2026-07-15 19:17:48,243 [WARNING] django.request: Too Many Requests: /task/projects/
+2026-07-15 19:17:48,243 [WARNING] django.channels.server: [31;1mHTTP GET /task/projects/ 429 [0.03, 127.0.0.1:58641][0m
+2026-07-15 19:17:49,313 [WARNING] django.request: Too Many Requests: /task/projects/
+2026-07-15 19:17:49,314 [WARNING] django.channels.server: [31;1mHTTP GET /task/projects/ 429 [0.04, 127.0.0.1:58641][0m
+2026-07-15 19:17:49,562 [WARNING] django.request: Too Many Requests: /task/projects/
+2026-07-15 19:17:49,562 [WARNING] django.channels.server: [31;1mHTTP GET /task/projects/ 429 [0.03, 127.0.0.1:58641][0m
+2026-07-15 19:17:49,877 [WARNING] django.request: Too Many Requests: /task/projects/
+2026-07-15 19:17:49,878 [WARNING] django.channels.server: [31;1mHTTP GET /task/projects/ 429 [0.04, 127.0.0.1:58641][0m
+2026-07-15 19:17:50,125 [WARNING] django.request: Too Many Requests: /task/projects/
+2026-07-15 19:17:50,126 [WARNING] django.channels.server: [31;1mHTTP GET /task/projects/ 429 [0.03, 127.0.0.1:58641][0m
+2026-07-15 19:17:50,354 [WARNING] django.request: Too Many Requests: /task/projects/
+2026-07-15 19:17:50,354 [WARNING] django.channels.server: [31;1mHTTP GET /task/projects/ 429 [0.02, 127.0.0.1:58641][0m
+2026-07-15 19:17:50,554 [WARNING] django.request: Too Many Requests: /task/projects/
+2026-07-15 19:17:50,554 [WARNING] django.channels.server: [31;1mHTTP GET /task/projects/ 429 [0.03, 127.0.0.1:58641][0m
+2026-07-15 19:17:50,714 [WARNING] django.request: Too Many Requests: /task/projects/
+2026-07-15 19:17:50,714 [WARNING] django.channels.server: [31;1mHTTP GET /task/projects/ 429 [0.02, 127.0.0.1:58641][0m
+2026-07-15 19:17:50,918 [WARNING] django.request: Too Many Requests: /task/projects/
+2026-07-15 19:17:50,918 [WARNING] django.channels.server: [31;1mHTTP GET /task/projects/ 429 [0.02, 127.0.0.1:58641][0m
+2026-07-15 19:17:51,130 [WARNING] django.request: Too Many Requests: /task/projects/
+2026-07-15 19:17:51,130 [WARNING] django.channels.server: [31;1mHTTP GET /task/projects/ 429 [0.04, 127.0.0.1:58641][0m
+2026-07-15 19:18:26,467 [INFO] django.utils.autoreload: /Users/giyos/PycharmProjects/u13_task_manager/config/settings.py changed, reloading.
+2026-07-15 19:18:27,803 [INFO] daphne.server: HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2026-07-15 19:18:27,803 [INFO] daphne.server: Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2026-07-15 19:18:27,803 [INFO] daphne.server: Listening on TCP address 127.0.0.1:8000
+2026-07-15 19:18:29,519 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.11, 127.0.0.1:58676][0m
+2026-07-15 19:18:30,298 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.05, 127.0.0.1:58676][0m
+2026-07-15 19:18:30,845 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.03, 127.0.0.1:58676][0m
+2026-07-15 19:18:31,342 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.03, 127.0.0.1:58676][0m
+2026-07-15 19:18:31,814 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.05, 127.0.0.1:58676][0m
+2026-07-15 19:18:32,267 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.03, 127.0.0.1:58676][0m
+2026-07-15 19:18:32,775 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.03, 127.0.0.1:58676][0m
+2026-07-15 19:18:33,272 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.03, 127.0.0.1:58676][0m
+2026-07-15 19:18:33,816 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.04, 127.0.0.1:58676][0m
+2026-07-15 19:18:34,283 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.04, 127.0.0.1:58676][0m
+2026-07-15 19:18:34,804 [WARNING] django.request: Too Many Requests: /task/projects/
+2026-07-15 19:18:34,804 [WARNING] django.channels.server: [31;1mHTTP GET /task/projects/ 429 [0.03, 127.0.0.1:58676][0m
+2026-07-15 19:18:35,290 [WARNING] django.request: Too Many Requests: /task/projects/
+2026-07-15 19:18:35,291 [WARNING] django.channels.server: [31;1mHTTP GET /task/projects/ 429 [0.03, 127.0.0.1:58676][0m
+2026-07-15 19:18:36,152 [WARNING] django.request: Too Many Requests: /task/projects/
+2026-07-15 19:18:36,154 [WARNING] django.channels.server: [31;1mHTTP GET /task/projects/ 429 [0.04, 127.0.0.1:58676][0m
+2026-07-15 19:18:38,383 [WARNING] django.request: Too Many Requests: /task/projects/
+2026-07-15 19:18:38,384 [WARNING] django.channels.server: [31;1mHTTP GET /task/projects/ 429 [0.04, 127.0.0.1:58676][0m
+2026-07-15 19:18:38,690 [WARNING] django.request: Too Many Requests: /task/projects/
+2026-07-15 19:18:38,690 [WARNING] django.channels.server: [31;1mHTTP GET /task/projects/ 429 [0.02, 127.0.0.1:58676][0m
+2026-07-15 19:18:38,888 [WARNING] django.request: Too Many Requests: /task/projects/
+2026-07-15 19:18:38,888 [WARNING] django.channels.server: [31;1mHTTP GET /task/projects/ 429 [0.02, 127.0.0.1:58676][0m
+2026-07-15 19:18:39,124 [WARNING] django.request: Too Many Requests: /task/projects/
+2026-07-15 19:18:39,124 [WARNING] django.channels.server: [31;1mHTTP GET /task/projects/ 429 [0.03, 127.0.0.1:58676][0m
+2026-07-15 19:18:39,323 [WARNING] django.request: Too Many Requests: /task/projects/
+2026-07-15 19:18:39,323 [WARNING] django.channels.server: [31;1mHTTP GET /task/projects/ 429 [0.03, 127.0.0.1:58676][0m
+2026-07-15 19:18:39,518 [WARNING] django.request: Too Many Requests: /task/projects/
+2026-07-15 19:18:39,518 [WARNING] django.channels.server: [31;1mHTTP GET /task/projects/ 429 [0.02, 127.0.0.1:58676][0m
+2026-07-15 19:18:39,683 [WARNING] django.request: Too Many Requests: /task/projects/
+2026-07-15 19:18:39,684 [WARNING] django.channels.server: [31;1mHTTP GET /task/projects/ 429 [0.02, 127.0.0.1:58676][0m
+2026-07-15 19:18:53,930 [INFO] django.utils.autoreload: /Users/giyos/PycharmProjects/u13_task_manager/config/settings.py changed, reloading.
+2026-07-15 19:18:56,798 [INFO] daphne.server: HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2026-07-15 19:18:56,798 [INFO] daphne.server: Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2026-07-15 19:18:56,798 [INFO] daphne.server: Listening on TCP address 127.0.0.1:8000
+2026-07-15 19:18:59,706 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.11, 127.0.0.1:58701][0m
+2026-07-15 19:19:00,560 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.04, 127.0.0.1:58701][0m
+2026-07-15 19:19:01,283 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.04, 127.0.0.1:58701][0m
+2026-07-15 19:19:01,821 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.05, 127.0.0.1:58701][0m
+2026-07-15 19:19:02,338 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.03, 127.0.0.1:58701][0m
+2026-07-15 19:19:02,934 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.11, 127.0.0.1:58701][0m
+2026-07-15 19:19:03,424 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.11, 127.0.0.1:58701][0m
+2026-07-15 19:19:04,205 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.06, 127.0.0.1:58701][0m
+2026-07-15 19:19:04,903 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.03, 127.0.0.1:58701][0m
+2026-07-15 19:19:05,517 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.03, 127.0.0.1:58701][0m
+2026-07-15 19:19:06,022 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.04, 127.0.0.1:58701][0m
+2026-07-15 19:19:06,667 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.03, 127.0.0.1:58701][0m
+2026-07-15 19:19:07,179 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.03, 127.0.0.1:58701][0m
+2026-07-15 19:19:07,674 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.03, 127.0.0.1:58701][0m
+2026-07-15 19:19:08,175 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.03, 127.0.0.1:58701][0m
+2026-07-15 19:19:08,805 [WARNING] django.request: Too Many Requests: /task/projects/
+2026-07-15 19:19:08,806 [WARNING] django.channels.server: [31;1mHTTP GET /task/projects/ 429 [0.03, 127.0.0.1:58701][0m
+2026-07-15 19:19:21,086 [INFO] django.utils.autoreload: /Users/giyos/PycharmProjects/u13_task_manager/config/settings.py changed, reloading.
+2026-07-15 19:19:22,299 [INFO] daphne.server: HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2026-07-15 19:19:22,299 [INFO] daphne.server: Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2026-07-15 19:19:22,300 [INFO] daphne.server: Listening on TCP address 127.0.0.1:8000
+2026-07-15 19:20:42,395 [INFO] django.utils.autoreload: /Users/giyos/PycharmProjects/u13_task_manager/tasks/views.py changed, reloading.
+2026-07-15 19:21:07,408 [INFO] django.utils.autoreload: /Users/giyos/PycharmProjects/u13_task_manager/tasks/views.py changed, reloading.
+2026-07-15 19:21:08,600 [INFO] daphne.server: HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2026-07-15 19:21:08,600 [INFO] daphne.server: Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2026-07-15 19:21:08,600 [INFO] daphne.server: Listening on TCP address 127.0.0.1:8000
+2026-07-15 19:21:13,012 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.20, 127.0.0.1:58726][0m
+2026-07-15 19:21:13,919 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.04, 127.0.0.1:58726][0m
+2026-07-15 19:21:14,628 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.11, 127.0.0.1:58726][0m
+2026-07-15 19:21:15,361 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.21, 127.0.0.1:58726][0m
+2026-07-15 19:21:15,771 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.04, 127.0.0.1:58726][0m
+2026-07-15 19:21:16,477 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.03, 127.0.0.1:58726][0m
+2026-07-15 19:21:17,036 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.03, 127.0.0.1:58726][0m
+2026-07-15 19:21:17,607 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.03, 127.0.0.1:58726][0m
+2026-07-15 19:21:18,157 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.04, 127.0.0.1:58726][0m
+2026-07-15 19:21:18,633 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.03, 127.0.0.1:58726][0m
+2026-07-15 19:21:19,183 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.04, 127.0.0.1:58726][0m
+2026-07-15 19:21:19,747 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.04, 127.0.0.1:58726][0m
+2026-07-15 19:21:20,277 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.03, 127.0.0.1:58726][0m
+2026-07-15 19:21:20,808 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.03, 127.0.0.1:58726][0m
+2026-07-15 19:21:21,302 [INFO] django.channels.server: [mHTTP GET /task/projects/ 200 [0.03, 127.0.0.1:58726][0m
+2026-07-15 19:21:21,937 [WARNING] django.request: Too Many Requests: /task/projects/
+2026-07-15 19:21:21,938 [WARNING] django.channels.server: [31;1mHTTP GET /task/projects/ 429 [0.03, 127.0.0.1:58726][0m
+2026-07-15 19:23:12,643 [INFO] django.utils.autoreload: /Users/giyos/PycharmProjects/u13_task_manager/tasks/views.py changed, reloading.
+2026-07-15 19:23:14,490 [INFO] daphne.server: HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2026-07-15 19:23:14,490 [INFO] daphne.server: Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2026-07-15 19:23:14,490 [INFO] daphne.server: Listening on TCP address 127.0.0.1:8000
+2026-07-15 19:52:53,134 [INFO] django.utils.autoreload: /Users/giyos/PycharmProjects/u13_task_manager/tasks/views.py changed, reloading.

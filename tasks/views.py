@@ -7,6 +7,7 @@ from django.shortcuts import get_object_or_404
 from rest_framework import status, filters
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
+from rest_framework.throttling import UserRateThrottle, ScopedRateThrottle
 from rest_framework.views import APIView
 from rest_framework.viewsets import ModelViewSet, GenericViewSet
 # from django.contrib.postgres.search import TrigramSimilarity
@@ -26,7 +27,7 @@ class BackgroundTaskViewSet(GenericViewSet):
     serializer_class = BackgroundTaskSerializer
 
     @action(detail=False, methods=['post'])
-    def send_gmail(self,request):
+    def send_gmail(self, request):
         pass
 
     @action(detail=False, methods=['get'])
@@ -51,6 +52,10 @@ def salom(request):
 
 
 class ProjectAPIView(APIView):
+    throttle_scope = 'lists'
+    throttle_classes = [ScopedRateThrottle]
+
+
     @swagger_auto_schema(
         manual_parameters=[
             openapi.Parameter(
