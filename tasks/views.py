@@ -73,14 +73,6 @@ class ProjectAPIView(APIView):
             ),
         ],
     )
-    def get(self, request):
-        cache_data = cache.get('task_list')
-        if not cache_data:
-            project = Project.objects.select_related('owner')  # querset[<p1>,<p2]
-            serializer = ProjectList(project, many=True)  # [{id:1,"name":sdads..}, ...]
-            cache.set('task_list', serializer.data, CACHE_TTL)
-            return Response({'data': serializer.data, "cache": False})
-        return Response({'data': cache_data, "cache": True})
         # project_list = []
         # for project in project:
         #     project_dict = {
